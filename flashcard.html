@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arabic Vocabulary Flashcards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .flashcard {
+            width: 200px;
+            height: 120px;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            animation: pulse 2s infinite alternate;
+        }
+        
+        .flashcard:hover {
+            transform: translateY(-5px);
+        }
+
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .flashcard-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            backface-visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .arabic-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .english-text {
+            font-size: 18px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+
+        /* CSS animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arabic Vocabulary Flashcards</h1>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-content">
+                <div class="arabic-text">مرحباً</div>
+                <div class="english-text">Hello</div>
+            </div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-content">
+                <div class="arabic-text">شكراً</div>
+                <div class="english-text">Thank you</div>
+            </div>
+        </div>
+        <div class="flashcard" onclick="flipCard(this)">
+            <div class="flashcard-content">
+                <div class="arabic-text">نعم</div>
+                <div class="english-text">Yes</div>
+            </div>
+        </div>
+        <!-- Flashcard 1 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَعَمْ</div>
+        <div class="english-text">Yes</div>
+    </div>
+</div>
+
+<!-- Flashcard 2 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">شُكْرًا</div>
+        <div class="english-text">Thank you</div>
+    </div>
+</div>
+
+<!-- Flashcard 3 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">مَاءٌ</div>
+        <div class="english-text">Water</div>
+    </div>
+</div>
+
+<!-- Flashcard 4 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَلاَمٌ</div>
+        <div class="english-text">Peace</div>
+    </div>
+</div>
+
+<!-- Flashcard 5 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">مَرْحَبًا</div>
+        <div class="english-text">Hello</div>
+    </div>
+</div>
+
+<!-- Flashcard 6 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">جَمِيلٌ</div>
+        <div class="english-text">Beautiful</div>
+    </div>
+</div>
+
+<!-- Flashcard 7 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَعِيدٌ</div>
+        <div class="english-text">Happy</div>
+    </div>
+</div>
+
+<!-- Flashcard 8 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">شَمْسٌ</div>
+        <div class="english-text">Sun</div>
+    </div>
+</div>
+
+<!-- Flashcard 9 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">قَمَرٌ</div>
+        <div class="english-text">Moon</div>
+    </div>
+</div>
+
+<!-- Flashcard 10 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَجْمٌ</div>
+        <div class="english-text">Star</div>
+    </div>
+</div>
+
+<!-- Flashcard 11 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَمَاءٌ</div>
+        <div class="english-text">Sky</div>
+    </div>
+</div>
+
+<!-- Flashcard 12 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">تُرَابٌ</div>
+        <div class="english-text">Dirt</div>
+    </div>
+</div>
+
+<!-- Flashcard 13 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">رَمْلٌ</div>
+        <div class="english-text">Sand</div>
+    </div>
+</div>
+
+<!-- Flashcard 14 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">جَبَلٌ</div>
+        <div class="english-text">Mountain</div>
+    </div>
+</div>
+
+<!-- Flashcard 15 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">بَحْرٌ</div>
+        <div class="english-text">Sea</div>
+    </div>
+</div>
+
+<!-- Flashcard 16 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَهْرٌ</div>
+        <div class="english-text">River</div>
+    </div>
+</div>
+
+<!-- Flashcard 17 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَارٌ</div>
+        <div class="english-text">Fire</div>
+    </div>
+</div>
+
+<!-- Flashcard 18 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">هَوَاءٌ</div>
+        <div class="english-text">Air</div>
+    </div>
+</div>
+
+<!-- Flashcard 19 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">غَيْمٌ</div>
+        <div class="english-text">Cloud</div>
+    </div>
+</div>
+
+<!-- Flashcard 20 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">وَرْدَةٌ</div>
+        <div class="english-text">Rose</div>
+    </div>
+</div>
+
+<!-- Flashcard 21 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">فَرَاشَةٌ</div>
+        <div class="english-text">Butterfly</div>
+    </div>
+</div>
+
+<!-- Flashcard 22 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">عُصْفُورٌ</div>
+        <div class="english-text">Bird</div>
+    </div>
+</div>
+
+<!-- Flashcard 23 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">كِتَابٌ</div>
+        <div class="english-text">Book</div>
+    </div>
+</div>
+
+<!-- Flashcard 24 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">قَلَمٌ</div>
+        <div class="english-text">Pen</div>
+    </div>
+</div>
+
+<!-- Flashcard 25 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَاعَةٌ</div>
+        <div class="english-text">Clock</div>
+    </div>
+</div>
+
+<!-- Flashcard 26 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">مَنْبَعٌ</div>
+        <div class="english-text">Source</div>
+    </div>
+</div>
+
+<!-- Flashcard 27 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَهْلٌ</div>
+        <div class="english-text">Plain</div>
+    </div>
+</div>
+
+<!-- Flashcard 28 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">مَدِينَةٌ</div>
+        <div class="english-text">City</div>
+    </div>
+</div>
+
+<!-- Flashcard 29 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">وَلَدٌ</div>
+        <div class="english-text">Boy</div>
+    </div>
+</div>
+
+<!-- Flashcard 30 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">بِنْتٌ</div>
+        <div class="english-text">Girl</div>
+    </div>
+</div>
+
+<!-- Flashcard 31 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَمَكٌ</div>
+        <div class="english-text">Fish</div>
+    </div>
+</div>
+
+<!-- Flashcard 32 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">شَجَرَةٌ</div>
+        <div class="english-text">Tree</div>
+    </div>
+</div>
+
+<!-- Flashcard 33 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">زَهْرَةٌ</div>
+        <div class="english-text">Flower</div>
+    </div>
+</div>
+<!-- Flashcard 35 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">تَرْبَةٌ</div>
+        <div class="english-text">Soil</div>
+    </div>
+</div>
+<!-- Flashcard 36 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">شَمْسٌ</div>
+        <div class="english-text">Sun</div>
+    </div>
+</div>
+<!-- Flashcard 37 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">قَمَرٌ</div>
+        <div class="english-text">Moon</div>
+    </div>
+</div>
+<!-- Flashcard 38 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَجْمٌ</div>
+        <div class="english-text">Star</div>
+    </div>
+</div>
+<!-- Flashcard 39 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">كَوْكَبٌ</div>
+        <div class="english-text">Planet</div>
+    </div>
+</div>
+<!-- Flashcard 40 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">جَبَلٌ</div>
+        <div class="english-text">Mountain</div>
+    </div>
+</div>
+<!-- Flashcard 41 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">نَهْرٌ</div>
+        <div class="english-text">River</div>
+    </div>
+</div>
+<!-- Flashcard 42 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">بَحْرٌ</div>
+        <div class="english-text">Sea</div>
+    </div>
+</div>
+<!-- Flashcard 43 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">جَزِيرَةٌ</div>
+        <div class="english-text">Island</div>
+    </div>
+</div>
+<!-- Flashcard 44 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">بَلَدٌ</div>
+        <div class="english-text">Country</div>
+    </div>
+</div>
+<!-- Flashcard 45 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">قَارَةٌ</div>
+        <div class="english-text">Continent</div>
+    </div>
+</div>
+<!-- Flashcard 46 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">سَمَاءٌ</div>
+        <div class="english-text">Sky</div>
+    </div>
+</div>
+<!-- Flashcard 47 -->
+<div class="flashcard" onclick="flipCard(this)">
+    <div class="flashcard-content">
+        <div class="arabic-text">تَلَاجٌ</div>
+        <div class="english-text">Snow</div>
+    </div>
+</div>
+
+
+        <!-- Add more flashcards here -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 furqontechnologies. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+
+        // Function to generate random gradient colors
+        function generateRandomGradient() {
+            const angle = Math.floor(Math.random() * 360);
+            const color1 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            const color2 = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            return `linear-gradient(${angle}deg, ${color1}, ${color2})`;
+        }
+
+        // Apply random gradient colors to each flashcard
+        const flashcards = document.querySelectorAll('.flashcard');
+        flashcards.forEach(card => {
+            card.style.background = generateRandomGradient();
+        });
+    </script>
+</body>
+</html>
