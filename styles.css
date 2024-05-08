@@ -191,7 +191,12 @@ section{
 .contact-form button:hover {
     background-color: #45a049;
 }
+.news-item img {
+    position: relative;
+    width: 150px;
+    border-radius: 20px;
 
+}
   
 footer {
     background-color: #333; /* Dark gray header */
