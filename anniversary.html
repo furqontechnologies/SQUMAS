@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Events - Madrasah</title>
+<title>Events - SQUMAS</title>
 <link rel="stylesheet" href="styles.css">
 
 <style>
@@ -61,9 +61,6 @@
     opacity: 1;
     animation: burst 1.5s linear;
 }
-.event-details img {
-    border-radius: 10px;
-}
 
 @keyframes burst {
     0% {
@@ -75,21 +72,33 @@
         opacity: 0;
     }
 }
+
+.event-details img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
 </style>
 </head>
 <body>
 
 <div class="event-section">
-    <h2> WELCOME!</h2>
+    <h2>WELCOME!</h2>
 
     <button class="event-button" onclick="showEvent()">
-        🎉SQUMAS 15th Anniversary & 10th Graduation Ceremony
+        🎉 SQUMAS 15th Anniversary & 10th Graduation Ceremony
     </button>
 
     <div id="event-details" class="event-details">
-        <img src="aniversary pic.jpg" alt="Event Image" style="max-width: 100%; height: auto;">
+        <img src="aniversary pic.jpg" alt="Event Image"> <!-- Event image placeholder -->
         <h3>🎊 Event Details</h3>
         <p>Celebrate with us on June 1! Join us for an unforgettable event featuring our 15th Anniversary and 10th Graduation Ceremony.</p>
+        
+        <h4>👨‍👦‍👦Father of the Day</h4>
+        <p>Honoring ALJ.DR.ABBAS ZAKARIYYAH(AL QOORI BABA LOJABA), who has been a pillar of support for SQUMAS.</p>
+        
+        <h4>🎤Host</h4>
+        <p>Welcome our Host, SHAYKH KAMALDEEN(THE DIRECTOR AND FOUNDER OF SQUMAS), who will guide us through this wonderful event.</p>
         
         <h4>🎙️ Guest Speakers</h4>
         <p>Listen to insightful speeches from esteemed scholars and educators.</p>
@@ -100,7 +109,7 @@
         <h4>🍽️ Food & Networking</h4>
         <p>Connect with fellow attendees over delicious refreshments.</p>
 
-        <a href="contact.html"> Contact Us</a>
+        <a href="contact.html">Contact Us</a>
     </div>
 
     <audio id="event-audio" src="1.mp3" loop></audio> <!-- Background audio -->
@@ -109,7 +118,6 @@
 <script>
 function showEvent() {
     const eventDetails = document.getElementById("event-details");
-    const eventButton = document.querySelector(".event-button");
     eventDetails.style.display = "block";
 
     const eventAudio = document.getElementById("event-audio");
