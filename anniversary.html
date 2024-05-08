@@ -61,6 +61,9 @@
     opacity: 1;
     animation: burst 1.5s linear;
 }
+.event-details img {
+    border-radius: 10px;
+}
 
 @keyframes burst {
     0% {
@@ -80,10 +83,11 @@
     <h2> WELCOME!</h2>
 
     <button class="event-button" onclick="showEvent()">
-        🎉 15th Anniversary & 10th Graduation Ceremony
+        🎉SQUMAS 15th Anniversary & 10th Graduation Ceremony
     </button>
 
     <div id="event-details" class="event-details">
+        <img src="aniversary pic.jpg" alt="Event Image" style="max-width: 100%; height: auto;">
         <h3>🎊 Event Details</h3>
         <p>Celebrate with us on May 1! Join us for an unforgettable event featuring our 15th Anniversary and 10th Graduation Ceremony.</p>
         
@@ -97,7 +101,7 @@
         <p>Connect with fellow attendees over delicious refreshments.</p>
     </div>
 
-    <audio id="event-audio" src="your-audio-file.mp3" loop></audio> <!-- Background audio -->
+    <audio id="event-audio" src="1.mp3" loop></audio> <!-- Background audio -->
 </div>
 
 <script>
