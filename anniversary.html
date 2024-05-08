@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - Madrasah</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* Basic styling for event section */
+.event-section {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.event-button {
+    padding: 15px 25px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.event-button:hover {
+    transform: scale(1.1);
+    background-color: #e34c4c;
+}
+
+.event-details {
+    display: none;
+    animation: fadeIn 1s ease-in-out;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    opacity: 1;
+    animation: burst 1.5s linear;
+}
+
+@keyframes burst {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(5) translateY(-200px);
+        opacity: 0;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="event-section">
+    <h2> WELCOME!</h2>
+
+    <button class="event-button" onclick="showEvent()">
+        🎉 15th Anniversary & 10th Graduation Ceremony
+    </button>
+
+    <div id="event-details" class="event-details">
+        <h3>🎊 Event Details</h3>
+        <p>Celebrate with us on May 1! Join us for an unforgettable event featuring our 15th Anniversary and 10th Graduation Ceremony.</p>
+        
+        <h4>🎙️ Guest Speakers</h4>
+        <p>Listen to insightful speeches from esteemed scholars and educators.</p>
+        
+        <h4>🎵 Entertainment & Activities</h4>
+        <p>Enjoy cultural performances and other activities throughout the day.</p>
+        
+        <h4>🍽️ Food & Networking</h4>
+        <p>Connect with fellow attendees over delicious refreshments.</p>
+    </div>
+
+    <audio id="event-audio" src="your-audio-file.mp3" loop></audio> <!-- Background audio -->
+</div>
+
+<script>
+function showEvent() {
+    const eventDetails = document.getElementById("event-details");
+    const eventButton = document.querySelector(".event-button");
+    eventDetails.style.display = "block";
+
+    const eventAudio = document.getElementById("event-audio");
+    eventAudio.play();
+
+    const eventSection = document.querySelector(".event-section");
+    const numParticles = 20;
+
+    for (let i = 0; i < numParticles; i++) {
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+        particle.style.left = `${Math.random() * 100}%`;
+        particle.style.top = `${Math.random() * 100}%`;
+        eventSection.appendChild(particle);
+    }
+}
+</script>
+
+</body>
+</html>
